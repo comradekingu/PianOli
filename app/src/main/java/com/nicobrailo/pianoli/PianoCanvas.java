@@ -95,7 +95,7 @@ class PianoCanvas extends SurfaceView implements SurfaceHolder.Callback {
             // Draw big key
             Paint big_key_paint = new Paint();
             big_key_paint.setColor(theme.getColorForKey(i, piano.is_key_pressed(i)));
-            draw_key(canvas, piano.get_area_for_key(i), big_key_paint);
+            draw_key(canvas, piano.get_area_for_big_key(i), big_key_paint);
         }
 
         // Small keys drawn after big keys to ensure z-index
